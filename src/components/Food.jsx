@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { data, categories } from '../data/data'
-import Menu from './Menu'
+import Footer from './Footer'
 import Card from './Card'
 
 const Food = () => {
@@ -103,7 +103,7 @@ const Food = () => {
         </h2>
         <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3'>
           {categories.map((item, index) => (
-            <Menu
+            <Footer
               key={index}
               name={item.name}
               image={item.image}
